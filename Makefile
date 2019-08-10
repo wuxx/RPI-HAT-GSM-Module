@@ -23,6 +23,7 @@ ALL_LIBS =
 
 ALL_SRCS = \
         $(ROOT)/main.c   \
+        $(ROOT)/at.c   \
         $(ROOT)/serial.c
 
 C_SRCS   = $(filter %.c, $(ALL_SRCS))

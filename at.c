@@ -5,10 +5,13 @@
 int at_request(char *request, char *response, uint32_t response_len, uint32_t timeout_ms)
 {
 
-     serial_send(request, strlen(request));
-     serial_recv(response, response_len, timeout_ms);
+    serial_send(request, strlen(request));
+    serial_recv(response, response_len, timeout_ms);
 
-     return 0;
+    printf("===========================\r\n");
+    printf("at send [%s]; recv [%s]\r\n", request, response);
+    printf("===========================\r\n");
+    return 0;
 }
 
 

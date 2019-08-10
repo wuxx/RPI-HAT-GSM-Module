@@ -6,4 +6,6 @@
 int at_request(char *request, char *response, uint32_t response_len, uint32_t timeout_ms);
 
 
+int at_init();
+
 #endif /* __AT_H__ */

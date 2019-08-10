@@ -89,7 +89,7 @@ int32_t serial_recv(void *buf, uint32_t len, uint32_t timeout_ms)
     }
 
 
-    usleep(20 * 1000); /* wait 10ms for driver to recv the total data */
+    usleep(100 * 1000); /* wait 10ms for driver to recv the total data */
 
     return read(sfd, buf, len);
 }

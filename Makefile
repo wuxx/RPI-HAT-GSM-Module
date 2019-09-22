@@ -24,7 +24,9 @@ ALL_LIBS =
 ALL_SRCS = \
         $(ROOT)/main.c   \
         $(ROOT)/at.c   \
-        $(ROOT)/serial.c
+        $(ROOT)/serial.c    \
+        $(ROOT)/demo/demo_tcp.c  \
+        $(ROOT)/demo/demo_aliyun.c
 
 C_SRCS   = $(filter %.c, $(ALL_SRCS))
 H_SRCS   = $(wildcard $(INCLUDE_DIR)/*.h)
@@ -66,12 +68,9 @@ all:init build_objs
 tags:
 	ctags -R .
 
-#deviceid:
-	#$(CC) $(CFLAGS) -g -DIDMAIN -c $(ROOT)/src/deviceid.c -o out/deviceid.o
-	#$(LD) out/deviceid.o $(LDFLAGS) -o out/deviceid
 
-ccount:
-	find ./src | egrep ".*\.[ch]$$" | xargs wc -l
+run:
+	./out/main
 
 cloc: 
 	cloc --exclude-dir=locallib .

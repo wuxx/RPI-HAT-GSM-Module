@@ -3,7 +3,8 @@
 
 #include "stdint.h"
 
-int at_request(char *request, char *response, uint32_t response_len, uint32_t timeout_ms);
+int at_request(char *request, char *response, uint32_t response_len, 
+        uint32_t force_wait_timeout_ns, uint32_t recv_timeout_ms);
 
 
 int at_init();

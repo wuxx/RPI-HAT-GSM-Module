@@ -26,7 +26,7 @@ ALL_SRCS = \
         $(ROOT)/at.c   \
         $(ROOT)/serial.c    \
         $(ROOT)/demo/demo_tcp.c  \
-        $(ROOT)/demo/demo_aliyun.c
+        $(ROOT)/demo/demo_mqtt_aliyun.c
 
 C_SRCS   = $(filter %.c, $(ALL_SRCS))
 H_SRCS   = $(wildcard $(INCLUDE_DIR)/*.h)

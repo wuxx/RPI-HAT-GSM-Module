@@ -8,7 +8,8 @@
 char buf_send[1024];
 char buf_recv[1024];
 
-extern int32_t demo_aliyun();
+extern int32_t demo_mqtt();
+extern int32_t demo_mqtt_aliyun();
 extern int32_t demo_tcp();
 
 int main()
@@ -64,9 +65,11 @@ int main()
     printf("dns resolve:\r\n");
     at_request("AT+CDNSGIP=\"www.baidu.com\"\r\n", buf_recv, sizeof(buf_recv), 3000, 1000);
 
-    //demo_aliyun();
+    demo_mqtt();
 
-    demo_tcp();
+    //demo_mqtt_aliyun();
+
+    //demo_tcp();
 
     return 0;
 }

@@ -5,14 +5,14 @@
 static char buf_send[1024];
 static char buf_recv[1024];
 
-#define CLIENT_ID   "test123|securemode=3,signmethod=hmacsha1,timestamp=1234567|"
-#define USERNAME    "testdevice&a1Gzzy5Vewc"
-#define PASSWORD    "455A6E0F72DA0003A6B9239DFCEB475692D36CF7"
+#define CLIENT_ID   "mqtt_user-123"
+#define USERNAME    "mqtt_user"
+#define PASSWORD    "mqttpw123"
 
-#define HOST        "a1Gzzy5Vewc.iot-as-mqtt.cn-shanghai.aliyuncs.com"
+#define HOST        "123.56.12.240"
 #define PORT        1883
 
-int32_t demo_mqtt_aliyun()
+int32_t demo_mqtt()
 {
 
 #if 0

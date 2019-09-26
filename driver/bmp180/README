@@ -1,0 +1,4 @@
+
+gpio -x bmp180:100 aread 100
+gpio -x bmp180:100 aread 101
+gpio -x bmp180:100 aread 102

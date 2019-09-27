@@ -17,7 +17,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'nanoDAP'
+project = 'RPI-HAT-GSM-Module'
 copyright = '2019, wuxx'
 author = 'wuxx'
 

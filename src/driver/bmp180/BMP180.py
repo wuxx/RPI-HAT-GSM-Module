@@ -35,7 +35,7 @@ class BMP180(object):
     def __init__(self, address=BMP180_I2CADDR, mode=BMP180_STANDARD):
         self._mode = mode
         self._address = address
-        self._bus = smbus.SMBus(1)
+        self._bus = smbus.SMBus(0)
         # Load calibration values.
         self._load_calibration()
     def _read_byte(self,cmd):

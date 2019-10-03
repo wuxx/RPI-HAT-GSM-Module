@@ -24,17 +24,29 @@ int main(int argc, char *argv[])
 	/* Print received pointer */
 	printf("myDisplay: %p\n", myDisplay);
 	
+	printf("0xffff\n");
 	LCD_Clear(0xffff);
+    sleep(10);
 
+	printf("0xf800\n");
 	LCD_Clear(0xf800);
+    sleep(10);
 
+	printf("0x07e0\n");
 	LCD_Clear(0x07e0);
+    sleep(10);
 
+	printf("0x001f\n");
 	LCD_Clear(0x001f);
+    sleep(10);
 
+	printf("0xffff\n");
 	LCD_Clear(0xffff);
+    sleep(10);
 
+	printf("0x0000\n");
 	LCD_Clear(0x0000);
+    sleep(10);
 
     while(1);
 

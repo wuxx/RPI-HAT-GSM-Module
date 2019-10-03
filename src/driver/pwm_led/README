@@ -1,0 +1,6 @@
+gpio mode 1 out
+
+#on
+gpio write 1 0
+#off
+gpio write 1 1

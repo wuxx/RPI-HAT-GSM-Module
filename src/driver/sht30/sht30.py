@@ -2,7 +2,7 @@ import smbus
 
 import time
 
-i2c = smbus.SMBus(1)
+i2c = smbus.SMBus(0)
 
 addr=0x44
 
